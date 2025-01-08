@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <!--swiper css-->
+    <link rel="stylesheet" href="other/css/swiper-bundle.min.css" />
+    <!--css-->
+    <link rel="stylesheet" href="other/css/css.css" />
+    <!--swiper js-->
+    <script src="other/js/swiper-bundle.min.js"></script>
+    <!--js-->
+    <script src="other/js/js.js"></script>
+    <title>iCraft</title>
+  </head>
+  <body>
+    <!-----------------navbar-------------->
+    <section class="header">
+      <header class="header_cls" id="header">
+        <div class="header-1">
+          <div class="logo">
+            <!--<img src="other/Preview.png" alt="trend card-img" />-->
+            <div class="title"><span>&Idot;</span>craft</div>
+          </div>
+          <div class="header_content">
+            <div class="nav__menu">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link"><span>Home</span></a>
+                </li>
+                <li class="nav__item">
+                  <a href="#category" class="nav__link"
+                    ><span>Category</span></a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="#Trend" class="nav__link"><span>Trend</span></a>
+                </li>
+                <li class="nav__item">
+                  <a href="#arrivals" class="nav__link"
+                    ><span>New Arrival</span></a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="#contact" class="nav__link"><span>Contact</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="icons">
+            <ul class="nav__list2">
+              <li class="nav__item">
+                <a href="#" class="icon__link">
+                  <span><i class="uil uil-search"></i></span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="icon__link">
+                  <span><i class="uil uil-heart"></i></span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="icon__link">
+                  <span><i class="uil uil-shopping-cart-alt"></i></span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <button class="user_button" id="sign_open">
+                  <abbr title="SignUp"
+                    ><span><i class="uil uil-user"></i></span
+                  ></abbr>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </section>
+    <!--mainimage-->
+    <section class="main_img">
+      <div class="img_div">
+        <img class="home_img" src="other/hm_bg.jpg" alt="Home Background" />
+        <div class="content">
+          <div class="greeting">Welcome to <span>&Idot;</span>craft</div>
+          <div class="sub_part">
+            Crafting is the art of turning ordinary objects into extraordinary
+            things
+          </div>
+          <button class="button-login" id="form_open">Login</button>
+        </div>
+      </div>
+    </section>
+
+    <!----------------LoginForm----------------->
+    <section class="login_sec" style="display: none">
+      <div class="login_container">
+        <h3>Log in</h3>
+        <i class="uil uil-times close" aria-label="Close"></i>
+        <form action="#">
+          <div class="inputarea">
+            <div class="input_box">
+              <i class="uil uil-envelope-alt email"></i>
+              <input type="email" placeholder="Email" aria-label="Email" />
+            </div>
+            <div class="input_box">
+              <i class="uil uil-lock password"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                aria-label="Password"
+              />
+            </div>
+            <a href="#">Forget password?</a>
+            <button class="l_button">Log in</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!------------------------signupForm---------------------->
+    <section class="signup_sec" style="display: none">
+      <div class="sign_container">
+        <h3>Sign up</h3>
+        <i class="uil uil-times close" aria-label="Close"></i>
+        <form action="#">
+          <div class="inputarea">
+            <div class="input_box">
+              <i class="uil uil-envelope-alt email"></i>
+              <input type="email" placeholder="Email" aria-label="Email" />
+            </div>
+            <div class="input_box">
+              <i class="uil uil-lock password"></i>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                aria-label="Password"
+              />
+            </div>
+            <div class="input_box">
+              <i class="uil uil-lock password"></i>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                aria-label="Password"
+              />
+            </div>
+            <div class="btxt">
+              Already have an account? <a href="">Login</a>
+            </div>
+            <button class="s_button">Sign up</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!------------------category------------------------->
+    <section class="Category" id="category">
+      <h3>Category</h3>
+      <!--row1-->
+      <div class="cards">
+        <div class="cat_row1">
+          <div class="card1" style="width: 18rem">
+            <img
+              src="other/category/clothes.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Clothing</h5>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
+            </div>
+          </div>
+          <div class="card2" style="width: 18rem">
+            <img
+              src="other/category/accessories.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Accessories</h5>
+            </div>
+          </div>
+          <div class="card3" style="width: 18rem">
+            <img
+              src="other/category/homedecor.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Home decor</h5>
+            </div>
+          </div>
+        </div>
+        <!--row2-->
+        <div class="cat_row2">
+          <div class="card4" style="width: 18rem">
+            <img src="other/category/soap.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Soaps</h5>
+            </div>
+          </div>
+          <div class="card5" style="width: 18rem">
+            <img
+              src="other/category/kitchendine.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kitchen & Dine</h5>
+            </div>
+          </div>
+          <div class="card6" style="width: 18rem">
+            <img
+              src="other/category/furniture(2).jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Furniture</h5>
+            </div>
+          </div>
+        </div>
+        <!--row3-->
+        <div class="cat_row3">
+          <div class="card7" style="width: 18rem">
+            <img
+              src="other/category/painting.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Paintings</h5>
+            </div>
+          </div>
+          <div class="card8" style="width: 18rem">
+            <img src="other/category/kids.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Kids</h5>
+            </div>
+          </div>
+          <div class="card9" style="width: 18rem">
+            <img
+              src="other/category/kidstoys.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Toys</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------Trend----------------------------------------------------->
+    <section class="class_sec" id="Trend">
+      <h3>Trend</h3>
+      <div class="silde-container swiper">
+        <div class="slide_content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="trend_card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="other/trend/needle_felting.jpeg"
+                    alt="trend card-img"
+                  />
+                </div>
+              </div>
+              <h2>Needle Felting</h2>
+            </div>
+            <div class="trend_card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="other/trend/resin_art(2).jpg"
+                    alt="trend card-img"
+                  />
+                </div>
+              </div>
+              <h2>Resin Art</h2>
+            </div>
+            <div class="trend_card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="other/trend/punch_needle_em.avif"
+                    alt="trend card-img"
+                  />
+                </div>
+              </div>
+              <h2>Punch Needle Embroidery</h2>
+            </div>
+            <div class="trend_card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="other/trend/upsholstery_fabric.jpeg"
+                    alt="trend card-img"
+                  />
+                </div>
+              </div>
+              <h2>Upsholstery Fabric</h2>
+            </div>
+            <div class="trend_card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img
+                    src="other/trend/squeegee_paintings.jpeg"
+                    alt="trend card-img"
+                  />
+                </div>
+              </div>
+              <h2>Squeegee Painting</h2>
+            </div>
+            <div class="trend_card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="other/trend/disco.webp" alt="trend card-img" />
+                </div>
+              </div>
+              <h2>Discoball Art</h2>
+            </div>
+            <div class="trend_card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="other/trend/homemade.webp" alt="trend card-img" />
+                </div>
+              </div>
+              <h2>Homemade Clothes</h2>
+            </div>
+            <div class="trend_card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="other/trend/macrame.jpg" alt="trend card-img" />
+                </div>
+              </div>
+              <h2>Marcrame</h2>
+            </div>
+            <div class="trend_card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="other/trend/pottery.jpg" alt="trend card-img" />
+                </div>
+              </div>
+              <h2>Pottery</h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-----------------------------------new arrival----------------------------------------------------------->
+    <section class="arrivals_sec" id="arrivals">
+      <div class="arrival-container">
+        <h3>New Arrivals</h3>
+        <span class="arrival-span1" id="spanid1"></span>
+        <span class="arrival-span2" id="spanid2"></span>
+        <span class="arrival-span3" id="spanid3"></span>
+        <span class="arrival-span4" id="spanid4"></span>
+        <span class="arrival-span5" id="spanid5"></span>
+        <span class="arrival-span6" id="spanid6"></span>
+        <span class="arrival-span7" id="spanid7"></span>
+        <div class="arrival-img slider">
+          <div class="slides-div" id="img1-id">
+            <img src="other/new_arrivals/bookmarks.avif" alt="" />
+            <a href="#spanid1" class="button" id="button-1"></a>
+          </div>
+          <div class="slides-div" id="img2-id">
+            <img src="other/new_arrivals/needlefelting.jpg" alt="" />
+            <a href="#spanid2" class="button" id="button-2"></a>
+          </div>
+          <div class="slides-div" id="img3-id">
+            <img src="other/new_arrivals/hacky sack.jpg" alt="" />
+            <a href="#spanid3" class="button" id="button-3"></a>
+          </div>
+          <div class="slides-div" id="img4-id">
+            <img src="other/new_arrivals/spoon.jpg" alt="" />
+            <a href="#spanid4" class="button" id="button-4"></a>
+          </div>
+          <div class="slides-div" id="img5-id">
+            <img src="other/new_arrivals/beautyProduct.webp" alt="" />
+            <a href="#spanid5" class="button" id="button-5"></a>
+          </div>
+          <div class="slides-div" id="img6-id">
+            <img src="other/new_arrivals/earings.jpg" alt="" />
+            <a href="#spanid6" class="button" id="button-6"></a>
+          </div>
+          <div class="slides-div" id="img7-id">
+            <img src="other/new_arrivals/diamondp.jpeg" alt="" />
+            <a href="#spanid7" class="button" id="button-7"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------about------------->
+    <section class="contact_sec" id="contact">
+      <div class="details">
+        <div class="intro">
+          <h4>Keerthana Singampalli</h4>
+          <h5>FrontEnd Developer</h5>
+        </div>
+        <div class="contact__socials">
+          <a href="https://wa.link/s1x4ex" target="_blank" class="social__link"
+            ><i class="uil uil-whatsapp"></i
+          ></a>
+          <a
+            href="mailto:keerthanasingampalli@gmail.com"
+            target="_blank"
+            class="social__link"
+            ><i class="uil uil-envelope"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/keerthana-singampalli-05539426a/"
+            target="_blank"
+            class="social__link"
+            ><i class="uil uil-linkedin"></i
+          ></a>
+          <a href="#" target="_blank" class="social__link"
+            ><i class="uil uil-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <!--swiper js-->
+  <script src="other/js/swiper-bundle.min.js"></script>
+  <!--js-->
+  <script src="other/js/js.js"></script>
+  <script src="other/js/swiperjs.js"></script>
+</html>
